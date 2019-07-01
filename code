@@ -1,0 +1,18 @@
+
+a=input("Enter total number of Subjects:-")
+n=0
+t=0
+CGPA=0
+for i in range(int(a)):
+    b=input("Enter Subject marks:-")
+    c=input("Enter no of credit hour")
+    n+=float(b)*float(c)
+    t+=float(c)
+gpa=n/t
+print(gpa)
+prev=input("Enter your previous Cgpa:-")
+CGPA=(float(prev)+float(gpa))/2
+print("your CGPA is:-",CGPA)
+
+
+
